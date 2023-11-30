@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding-inline: 2.4rem;
+  background-color: hsl(216, 12%, 8%);
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 340px;
+  border: 1px solid black;
+  padding: 2.4rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 8px;
+}
+
+.star-icon,
+.rating {
+  background-color: hsla(217, 12%, 63%, 0.141);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+  font-size: 1.4rem;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.rating {
+  color: hsl(216, 12%, 54%);
+  border: none;
+  font-size: 1.4rem;
+  margin-block: 1rem;
+}
+
+.rating:not(.selected):hover {
+  background-color: rgba(255, 255, 255, 0.507);
+  color: white;
+}
+
+.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.action {
+  background-color: transparent;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: rgba(255, 255, 255, 0.899);
+  text-transform: uppercase;
+  padding-block: 1rem;
+  border-radius: 20px;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-block-end: 1rem;
+}
+
+.action:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
